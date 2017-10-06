@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>InstanewsNewYork</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="build/css/style.min.css">
+        
+</head>
+
+<body>
+	<div class="container">
+      <header>
+		<div class="instaNewsLogo"> 
+			<img src="./images/nyt-logo.svg" alt="new york times logo">
+		</div>
+		<div class="menuSection">
+			<p>Choose a section:</p>
+			<select class='select'>
+				<option >Sections...</option>
+		  		<option value="home">Home</option>
+		  		<option value="science">Science</option>
+		  		<option value="business">Business</option>
+		  		<option value="sports">Sports</option>
+		  		<option value="technology">Technology</option>
+		  		<option value="fashion">Fashion</option>
+			</select>
+		 </div>
+	  </header>
+	  <div id="loadingArea"><img src="./images/ajax-loader.gif"></div>
+		<ul class="topNews"></ul>
+   </div>	
+   <footer>
+		<p>&copy; Copyright 2017 <span> instanews </span></p>
+   </footer>	
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/main.js"></script>	
+     </div>
+</body>
+</html>

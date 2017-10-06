@@ -1,0 +1,170 @@
+
+
+body {
+     background-color:black;
+     font-family: 'open_sanslight', serif;
+     font-size: 16px;
+     /*font-weight: normal;
+     font-style: normal;*/
+     
+    
+}
+
+/*.container{
+    margin:0 auto;
+    width: 100%;   
+}*/
+
+header{
+       display:flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-content: center;
+	   height: 90vh;
+       color: white;
+       padding-bottom: 20px;
+       @include media($tablet-width){
+           flex-direction: row;
+           align-content: center;
+       }
+       @include media($desktop-width){
+           justify-content: flex-start;
+           margin: 0 0;
+       }
+      
+}
+
+.header-transitions{
+    height: auto;
+    .instaNewsLogo{
+        width: 100px;
+        height: 100px;
+     }
+     @include media($tablet-width){
+         height: 150px;
+         justify-content: flex-start;
+     }
+     @include media($desktop-width){
+         max-width: 50%;
+         height: 135px;
+     }
+}
+.instaNewsLogo{
+    display:flex;
+    width: 100%;
+    height: auto;
+    flex: 1 1 100%;
+    margin-top:20px;
+     
+        img{
+            
+            width: 50%;
+            height: auto;
+            margin: 0 auto 0 auto;
+        }
+    @include media($tablet-width){
+        flex: 0 1 20%;
+            img{
+                width:100%;
+                height: auto;
+               }
+    }           
+    @include media($desktop-width){
+        flex: 0 1 20%;
+        align-self: center;
+    }
+    
+}
+.menuSection{
+    display: flex;
+    max-width: 100%;
+    flex: 1 1 100%;
+    flex-direction: column;
+    align-items: center;
+    
+    @include media($tablet-width){
+              align-self: center;
+              flex: 0 1 auto;
+    }
+    @include media($desktop-width){
+              align-self: center;
+              align-items: flex-start;
+    }
+         p{
+             text-align: center;
+             width: 150px;
+             padding: 10% 0;
+             @include media($tablet-width){
+                 text-align: left;
+             }
+         }
+         select{
+             width: 150px;
+         }
+}
+#loadingArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+          img{
+              width: 100px;
+              height: 100px;
+          }
+}
+.topNews{
+   display:flex;
+   flex-wrap: wrap;  
+   flex-direction: row;
+   width: 100%;
+   align-items: center;
+ 
+   li{
+      max-width: 100%;
+      flex:1 1 100%;
+      position: relative;
+      @include media($tablet-width){
+          max-width: 50%;
+          flex:1 1 50%;
+          }
+      @include media($desktop-width){
+          max-width: 25%;
+          flex:1 1 25%;
+          }
+      }
+ }
+ .picture{  
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%; 
+   }
+   .abstract{
+       color:white;
+       position:absolute;
+       height: 60px;
+       padding: 10px 20px;
+       background: rgba(0, 0, 0, 0.7);
+       padding: 10px;
+       bottom: 0;
+      
+   }
+ 
+footer{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    @include media($desktop-width){
+           text-align: left;
+    }
+   
+
+       p{
+           color:#c2c2c2;
+           font-size: 14px;
+           padding: 3%;
+           span{
+               text-transform: uppercase;
+               
+           }
+       }
+}
